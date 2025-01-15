@@ -8,12 +8,12 @@ int main(){
 	int randvalue=0;
 	time_t seconds=0;
 	
-	seconds=time(NULL)/3600;//获取1970-01-01 起的小时数 
+	seconds=time(NULL);//鑾峰彇1970-01-01 璧风殑绉掓暟 
 	srand(seconds); 
 	
-	printf("请输入两个数字，分别代表次数和面数，格式为数字空格数字\n");
+	printf("璇疯緭鍏ヤ袱涓暟瀛楋紝鍒嗗埆浠ｈ〃娆℃暟鍜岄潰鏁帮紝鏍煎紡涓烘暟瀛桪鏁板瓧\n");
 	while(1){
-		scanf("%d %d",&num,&face);
+		scanf("%dD%d",&num,&face);
 		randvalue=random(num,face);
 		
 	}
@@ -29,8 +29,7 @@ int random(int num,int face){
 		if(onetry%(RAND_MAX/face)>0){
 			facevalue+=1;
 		}
-		printf("%dn%d骰子的结果是(%d/%d)\n",num,face,facevalue,face);
+		printf("%dD%d楠板瓙鐨勭粨鏋滄槸(%d/%d)\n",num,face,facevalue,face);
 	} 
 	
 }
-
